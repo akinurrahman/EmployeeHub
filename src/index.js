@@ -61,23 +61,23 @@
       selectedEmployee.imgurl || "./assets/placeholder.webp"
     );
 
-    const employeeName = document.createElement("h2");
+    const employeeName = document.createElement("span");
     employeeName.classList.add("employee__name");
     employeeName.textContent = `${selectedEmployee.fname} ${selectedEmployee.lname}`;
 
-    const employeeAddress = document.createElement("p");
+    const employeeAddress = document.createElement("span");
     employeeAddress.classList.add("employee__address");
     employeeAddress.textContent = selectedEmployee.address;
 
-    const employeeMail = document.createElement("p");
+    const employeeMail = document.createElement("span");
     employeeMail.classList.add("employee__mail");
     employeeMail.textContent = selectedEmployee.email;
 
-    const employeeMobile = document.createElement("p");
+    const employeeMobile = document.createElement("span");
     employeeMobile.classList.add("employee__mobile");
     employeeMobile.textContent = `Phone: ${selectedEmployee.contact}`;
 
-    const employeeDOB = document.createElement("p");
+    const employeeDOB = document.createElement("span");
     employeeDOB.classList.add("employee__dob");
     employeeDOB.textContent = `DOB: ${selectedEmployee.dob}`;
 

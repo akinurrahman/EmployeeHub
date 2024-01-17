@@ -88,10 +88,18 @@ i {
 .employees__single--info {
   margin: 0 auto;
   text-align: center;
-  line-height: 0.6;
+  line-height: 1.6;
   padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .employees__single--info > img {
   border-radius: 50%;
   width: 210px;
+  margin-bottom: 10px;
+}
+.employees__single--info > .employee__name {
+  font-size: 33px;
+  font-weight: 600;
 }
