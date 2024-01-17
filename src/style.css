@@ -1,63 +1,87 @@
 body {
-    font-family: sans-serif;
-    padding: 0 10px;
-  }
-  :root {
-    --btn: #dbdbdb;
-    --btn-hover: #cacaca;
-    --item-bg: #fofofo;
-    --modal-bg: rgba(141, 141, 141, 0.541);
-  }
-  
-  /* Header Starts Here */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header > button {
-    padding: 10px 15px;
-    border-radius: 20px;
-    border: none;
-    background-color: var(--btn);
-    cursor: pointer;
-  }
-  
-  header > button:hover {
-    background-color: var(--btn-hover);
-  }
-  
-  /* Header Ends Here */
-  
-  /* Employee Table starts Here */
-  .employees {
-    display: flex;
-  }
-  .employees > div {
-    border: 1px solid black;
-    overflow-y: scroll;
-    height: 450px;
-  }
-  
-  .employees__names {
-    width: 30%;
-  }
-  .employees__single {
-    width: 70%;
-  }
-  
-  .employees__names,
-  .employees__single {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .employees__names--titles,
-  .employees__single--titles {
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    text-align: center;
-    border-bottom: 1px solid black;
-  }
-  
+  font-family: sans-serif;
+  padding: 0 10px;
+}
+:root {
+  --btn: #dbdbdb;
+  --btn-hover: #cacaca;
+  --modal-bg: rgba(141, 141, 141, 0.14);
+}
+
+/* Header Starts Here */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--btn);
+  cursor: pointer;
+}
+
+header > button:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Header Ends Here */
+
+/* Employee Table starts Here */
+.employees {
+  display: flex;
+}
+.employees > div {
+  border: 1px solid black;
+  overflow-y: scroll;
+  height: 450px;
+}
+
+.employees__names {
+  width: 30%;
+}
+.employees__single {
+  width: 70%;
+}
+
+.employees__names,
+.employees__single {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.employees__names--titles,
+.employees__single--titles {
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.selected {
+  color: red;
+}
+
+.employee__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px;
+  font-size: 20px;
+  margin: 4px 0;
+  background: var(--modal-bg);
+}
+
+.employee__container:hover {
+  background: rgba(141, 141, 141, 0.2);
+}
+.employee__container > span,
+i {
+  cursor: pointer;
+}
+
+.employee__container > i {
+  border: 1px solid;
+  padding: 1px 3px;
+  color: red;
+}
