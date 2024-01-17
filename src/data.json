@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "imgurl": "https://example.com/image1.jpg",
+      "fname": "John",
+      "lname": "Doe",
+      "email": "john.doe@example.com",
+      "contact": "+1 123-456-7890",
+      "age": 30,
+      "dob": "1992-05-15",
+      "salary": 80000,
+      "address": "123 Main St, Anytown, USA"
+    },
+    {
+      "id": 2,
+      "imgurl": "https://example.com/image2.jpg",
+      "fname": "Jane",
+      "lname": "Smith",
+      "email": "jane.smith@example.com",
+      "contact": "+1 987-654-3210",
+      "age": 28,
+      "dob": "1994-11-28",
+      "salary": 75000,
+      "address": "456 Oak Ave, Another City, USA"
+    },
+    {
+      "id": 3,
+      "imgurl": "https://example.com/image3.jpg",
+      "fname": "Alice",
+      "lname": "Johnson",
+      "email": "alice.j@example.com",
+      "contact": "+1 555-123-4567",
+      "age": 35,
+      "dob": "1987-08-03",
+      "salary": 90000,
+      "address": "789 Pine Blvd, Yet Another Town, USA"
+    },
+    {
+      "id": 4,
+      "imgurl": "https://example.com/image4.jpg",
+      "fname": "Bob",
+      "lname": "Williams",
+      "email": "bob.w@example.com",
+      "contact": "+1 333-555-7890",
+      "age": 32,
+      "dob": "1990-03-19",
+      "salary": 82000,
+      "address": "101 Cedar St, Somewhere City, USA"
+    },
+    {
+      "id": 5,
+      "imgurl": "https://example.com/image5.jpg",
+      "fname": "Eva",
+      "lname": "Brown",
+      "email": "eva.b@example.com",
+      "contact": "+1 777-888-1234",
+      "age": 27,
+      "dob": "1995-07-11",
+      "salary": 70000,
+      "address": "202 Maple Ave, Anywhere, USA"
+    },
+    {
+      "id": 6,
+      "imgurl": "https://example.com/image6.jpg",
+      "fname": "Alex",
+      "lname": "Davis",
+      "email": "alex.d@example.com",
+      "contact": "+1 222-333-4444",
+      "age": 29,
+      "dob": "1993-01-25",
+      "salary": 78000,
+      "address": "303 Birch St, Everywhere, USA"
+    },
+    {
+      "id": 7,
+      "imgurl": "https://example.com/image7.jpg",
+      "fname": "Grace",
+      "lname": "Taylor",
+      "email": "grace.t@example.com",
+      "contact": "+1 666-999-0000",
+      "age": 31,
+      "dob": "1991-09-07",
+      "salary": 86000,
+      "address": "404 Elm Blvd, Nowhere, USA"
+    },
+    {
+      "id": 8,
+      "imgurl": "https://example.com/image8.jpg",
+      "fname": "Ryan",
+      "lname": "Anderson",
+      "email": "ryan.a@example.com",
+      "contact": "+1 444-777-1111",
+      "age": 26,
+      "dob": "1996-12-14",
+      "salary": 72000,
+      "address": "505 Oak St, Elsewhere, USA"
+    },
+    {
+      "id": 9,
+      "imgurl": "https://example.com/image9.jpg",
+      "fname": "Sophia",
+      "lname": "Miller",
+      "email": "sophia.m@example.com",
+      "contact": "+1 888-111-2222",
+      "age": 33,
+      "dob": "1989-04-30",
+      "salary": 92000,
+      "address": "606 Pine Ave, No Place, USA"
+    },
+    {
+      "id": 10,
+      "imgurl": "https://example.com/image10.jpg",
+      "fname": "Daniel",
+      "lname": "Wilson",
+      "email": "daniel.w@example.com",
+      "contact": "+1 111-222-3333",
+      "age": 34,
+      "dob": "1988-06-22",
+      "salary": 88000,
+      "address": "707 Maple Blvd, Here, USA"
+    }
+  ]
+  
