@@ -7,9 +7,10 @@
   let selectedEmployee = res[0];
 
   const employeeList = document.querySelector(".employees__names--list");
+  const employeeSingleInfo = document.querySelector(".employees__single--info");
 
   const renderEmployee = () => {
-    employeeList.innerHTML = ""; // Clear existing content
+    employeeList.innerHTML = "";
 
     employees.forEach((item, index) => {
       const employeeContainer = document.createElement("div");
@@ -38,7 +39,7 @@
         // Update the selected employee object
         selectedEmployee = item;
 
-        // todo: handle employee selection logic
+        renderSingleEmployee();
       });
 
       employeeContainer.append(employee, deleteIcon);
@@ -47,8 +48,47 @@
       // Add "selected" class to the first employee by default
       if (index === 0) {
         employee.classList.add("selected");
+        renderSingleEmployee();
       }
     });
+  };
+
+  const renderSingleEmployee = () => {
+    employeeSingleInfo.innerHTML = "";
+    const employeeImg = document.createElement("img");
+    employeeImg.setAttribute(
+      "src",
+      selectedEmployee.imgurl || "./assets/placeholder.webp"
+    );
+
+    const employeeName = document.createElement("h2");
+    employeeName.classList.add("employee__name");
+    employeeName.textContent = `${selectedEmployee.fname} ${selectedEmployee.lname}`;
+
+    const employeeAddress = document.createElement("p");
+    employeeAddress.classList.add("employee__address");
+    employeeAddress.textContent = selectedEmployee.address;
+
+    const employeeMail = document.createElement("p");
+    employeeMail.classList.add("employee__mail");
+    employeeMail.textContent = selectedEmployee.email;
+
+    const employeeMobile = document.createElement("p");
+    employeeMobile.classList.add("employee__mobile");
+    employeeMobile.textContent = `Phone: ${selectedEmployee.contact}`;
+
+    const employeeDOB = document.createElement("p");
+    employeeDOB.classList.add("employee__dob");
+    employeeDOB.textContent = `DOB: ${selectedEmployee.dob}`;
+
+    employeeSingleInfo.append(
+      employeeImg,
+      employeeName,
+      employeeAddress,
+      employeeMail,
+      employeeMobile,
+      employeeDOB
+    );
   };
 
   renderEmployee();

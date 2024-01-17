@@ -81,7 +81,17 @@ i {
 }
 
 .employee__container > i {
-  border: 1px solid;
   padding: 1px 3px;
   color: red;
+}
+
+.employees__single--info {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.6;
+  padding: 25px 0;
+}
+.employees__single--info > img {
+  border-radius: 50%;
+  width: 210px;
 }
