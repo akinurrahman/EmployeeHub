@@ -25,10 +25,14 @@
 
       // Add an event listener to handle employee deletion
       deleteIcon.addEventListener("click", () => {
-        const selectedIndex = employees.findIndex((emp) => emp.id === selectedEmployeeId);
+        const selectedIndex = employees.findIndex(
+          (emp) => emp.id === selectedEmployeeId
+        );
         employees.splice(selectedIndex, 1);
         selectedEmployeeId = employees.length > 0 ? employees[0].id : null;
-        selectedEmployee = employees.find((emp) => emp.id === selectedEmployeeId);
+        selectedEmployee = employees.find(
+          (emp) => emp.id === selectedEmployeeId
+        );
         renderEmployee();
       });
 
@@ -56,7 +60,10 @@
   const renderSingleEmployee = () => {
     employeeSingleInfo.innerHTML = "";
     const employeeImg = document.createElement("img");
-    employeeImg.setAttribute("src", selectedEmployee.imgurl || "./assets/placeholder.webp");
+    employeeImg.setAttribute(
+      "src",
+      selectedEmployee.imgurl || "./assets/placeholder.webp"
+    );
 
     const employeeName = document.createElement("span");
     employeeName.classList.add("employee__name");
@@ -87,6 +94,30 @@
       employeeDOB
     );
   };
+
+  // Function to add a new employee
+  const addEmployee = (newEmployee) => {
+    employees.push(newEmployee);
+    renderEmployee();
+  };
+
+  // Add Employee button event listener
+  const addEmployeeBtn = document.querySelector("#addEmployeeBtn");
+  addEmployeeBtn.addEventListener("click", () => {
+    // Assuming newEmployee is an object with required properties
+    const newEmployee = {
+      id: employees.length + 1,
+      fname: "New",
+      lname: "Employee",
+      email: "",
+      contact: "",
+      age: "",
+      dob: "",
+      salary: "",
+      address: "",
+    };
+    addEmployee(newEmployee);
+  });
 
   renderEmployee();
 })();
